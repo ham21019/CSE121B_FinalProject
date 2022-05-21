@@ -1,0 +1,21 @@
+body {
+    background-color: orange;
+    text-align: center;
+}
+
+main {
+    padding: 50px;
+}
+
+#button {
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    width: 100px;
+    color: blue;
+}
+
+i {
+    font-size: 3rem;
+    color: aliceblue;
+}
