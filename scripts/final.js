@@ -11,6 +11,7 @@ Research Sites:
     https://www.interviewbit.com/blog/javascript-projects/
     https://jsbeginners.com/
     https://blog.boot.dev/javascript/javascript-projects-for-beginners/
+    https://www.w3schools.com/jsref/met_audio_play.asp
 */
 
 // create variables
