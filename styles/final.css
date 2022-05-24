@@ -4,7 +4,7 @@ body {
     font-family: "Roboto";
     background-color: orange;
     text-align: center;
-    max-width: 50%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -50,4 +50,8 @@ main p {
 #author {
     font-weight: lighter;
     font-size: 1.5rem;
+}
+
+footer {
+    font-size: .8rem;
 }
