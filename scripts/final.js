@@ -14,6 +14,7 @@ Research Sites:
     https://www.w3schools.com/jsref/met_audio_play.asp
     https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3
     https://www.epidemicsound.com/
+    https://www.programiz.com/javascript/function
 */
 
 // create variables
@@ -26,7 +27,10 @@ const currentYear = myDate.getYear();
 let message;
 
 // test date variables
-console.log(`Current Month: ${currentMonth}, Current Day: ${currentDay}, Current Year: ${currentYear}`)
+function testDate () {
+    console.log(`Current Month: ${currentMonth}, Current Day: ${currentDay}, Current Year: ${currentYear}`);
+}
+testDate();
 
 // set date in footer
 document.querySelector("#date").textContent = `Current Date: ${currentMonth + 1}/${currentDay}/${currentYear + 1900}`;
@@ -92,3 +96,11 @@ button.addEventListener("click", function () {
     // play sound
     audio.play();
 });
+
+// keep track of number of times button is clicked
+let count = 0;
+const counter = document.querySelector("#counter");
+button.onclick = function () {
+    count++;
+    counter.textContent = `You've clicked the button ${count} times.`
+};
