@@ -24,12 +24,13 @@ const currentDay = myDate.getDate();
 const currentMonth = myDate.getMonth();
 const currentYear = myDate.getYear();
 
+// test date variables
 console.log(`Current Month: ${currentMonth}, Current Day: ${currentDay}, Current Year: ${currentYear}`)
 
 // set date in footer
 document.querySelector("#date").textContent = `Current Date: ${currentMonth + 1}/${currentDay}/${currentYear + 1900}`;
 
-// array of dadJokes
+// create dadJokes array
 const dadJokes = [
     {
         joke: "Q: How do you kill a blue elephant?\nA: With a blue elephant gun.\n\nQ: How do you kill a red elephant?\nA: Hold its trunk till it turns blue, then shoot it with a blue elephant gun.",
@@ -65,12 +66,18 @@ const dadJokes = [
     }
 ];
 
-// perform action
+// button action
 button.addEventListener("click", function () {
+    // get randomNumber based on dadJokes array
     let randomNumber = Math.floor(Math.random() * dadJokes.length);
+    
     // testing which number was picked
     console.log(`The random number chosen was ${randomNumber}`);
+    
+    // display joke with source
     document.querySelector("#quote").textContent = dadJokes[randomNumber].joke;
     document.querySelector("#author").textContent = `Source: ${dadJokes[randomNumber].source}`;
+    
+    // play sound
     audio.play();
 });
