@@ -24,7 +24,7 @@ const currentDay = myDate.getDate();
 const currentMonth = myDate.getMonth();
 const currentYear = myDate.getYear();
 
-console.log(`Current Month: ${currentMonth}, Current Day: ${currentDay}, Current Year${currentYear}`)
+console.log(`Current Month: ${currentMonth}, Current Day: ${currentDay}, Current Year: ${currentYear}`)
 
 // set date in footer
 document.querySelector("#date").textContent = `Current Date: ${currentMonth + 1}/${currentDay}/${currentYear + 1900}`;
