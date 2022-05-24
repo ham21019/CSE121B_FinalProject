@@ -23,12 +23,23 @@ const myDate = new Date();
 const currentDay = myDate.getDate();
 const currentMonth = myDate.getMonth();
 const currentYear = myDate.getYear();
+let message;
 
 // test date variables
 console.log(`Current Month: ${currentMonth}, Current Day: ${currentDay}, Current Year: ${currentYear}`)
 
 // set date in footer
 document.querySelector("#date").textContent = `Current Date: ${currentMonth + 1}/${currentDay}/${currentYear + 1900}`;
+
+// conditional message based on month
+if (currentMonth >= 0 && currentMonth <= 5 || currentMonth >= 8 && currentMonth <=11) {
+    message = "Good luck in school!";
+} else {
+    message = "Enjoy your summer vacation!";
+}
+
+// set message in footer
+document.querySelector("#message").textContent = message
 
 // create dadJokes array
 const dadJokes = [

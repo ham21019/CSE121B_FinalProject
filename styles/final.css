@@ -54,4 +54,10 @@ main p {
 
 footer {
     font-size: .8rem;
+    font-weight: bold;
+}
+
+#message {
+    padding: 25px;
+    color: navy;
 }
